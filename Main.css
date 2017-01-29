@@ -1,0 +1,81 @@
+@font-face {
+    font-family: "Open";
+    src: url("OpenSans.ttf");
+}
+@font-face {
+    font-family: "Myriad";
+    src: url("MyriadPro.ttf");
+}
+@font-face {
+    font-family: "ArialN";
+    src: url("ArialNarrow.ttf");
+}
+
+#bar {
+    background-color: black;
+    color: white;
+    font-family: Myriad;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+}
+#py {
+    cursor: not-allowed;
+}
+
+#front {
+    text-transform: uppercase;
+    font-family: Open;
+    width: 100%;
+    height: 30%;
+    text-align: center;
+    font-size: 100px;
+    border-right: 100%;
+}
+
+.wob {
+    color: white;
+    background-color: black;
+    border-right: 100%;
+}
+.bow {
+    color: black;
+    background-color: white;
+}
+
+#head {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-family: Myriad;
+}
+
+.mastheadnameright {
+    left: 50%;
+    position: absolute;
+}
+.mastheadnameleft {
+    left: 25%;
+    position: absolute;
+}
+
+#articles {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.headline {
+    font-family: ArialN;
+    font-size: 32px;
+}
+.writer {
+    font-family: ArialN;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+.articletext {
+    font-family: Myriad;
+    font-size: 12px;
+    text-align: justify;
+}
