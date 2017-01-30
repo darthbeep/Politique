@@ -1,7 +1,9 @@
-var articles = ["Lorem", "StarTrek", "Cupcake", "Pirate"];
+var articles = ["Lorem Ipsum Dolor Sit Amet", "Star Trek Themed Lorem", "Cupcakes Taste Good", "Pirating Music is Fun"];
 var writers = ["George Washington", "John Adams", "Thomas Jefferson", "James Madison"];
 var text = [];
-
+var vol = [2, 2, 1, 1];
+var iss = [1, 1, 2, 1];
+var img = ["http://www.billboard.com/files/styles/article_main_image/public/media/donald-trump-thumbs-up-aug-2015-billboard-650.jpg", "http://www.usnews.com/dims4/USNEWS/5c287b1/2147483647/thumbnail/970x647/quality/85/?url=%2Fcmsmedia%2Ffb%2Fa0c6e9a1c7db237875eb9a9af49192%2Fresizes%2F1500%2Fmedia%3A95bb2d0fba214be08616d61b25fcc7a0Obama.JPEG", "http://media.salon.com/2014/04/karl_marx.jpg", "https://static01.nyt.com/images/2016/11/11/us/politics/donald-trump-administration-1478905372015/donald-trump-administration-1478905372015-videoSixteenByNineJumbo1600-v2.jpg"];
 text[0] = ''+
 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque velit dui, ullamcorper ut odio sed, porta varius ante. Fusce ornare convallis sagittis. Donec dapibus, tellus nec eleifend porta, magna odio luctus purus, non eleifend odio dui ut leo. Phasellus lacinia lorem eu arcu fringilla pulvinar. Vestibulum tincidunt ac nibh placerat tempus. Integer condimentum felis nibh, et volutpat lorem viverra at. Morbi hendrerit vehicula mi a aliquet. Nulla lectus ante, dictum vel commodo at, consectetur at justo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam volutpat laoreet dui, posuere accumsan tellus fringilla eget. Vestibulum non porttitor felis. Nullam nec gravida dui. Cras nec turpis metus. Donec turpis purus, consectetur at nibh iaculis, commodo dignissim nibh.'+
 '<br>'+
