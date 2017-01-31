@@ -2,11 +2,11 @@ var nav = "";
 
 function createNavBar() {
     nav += "<div id='bar'>";
-    nav += "<a class='navlink'>Stuy Democrats Newsletter</a>";
+    nav += "<a class='navlink' href='Main.html'>Stuy Democrats Newsletter</a>";
     nav += " | ";
-    nav += "<a class='navlink'>Volumes</a>";
-    nav += " | ";
-    nav += "<a class='navlink'>Issues</a>";
+    nav += "<a class='navlink' href='Volumes.html'>Volumes & Issues</a>";
+    //nav += " | ";
+    //nav += "<a class='navlink'>Issues</a>";
     nav += " | "
     getDate();
     nav += "</div>";

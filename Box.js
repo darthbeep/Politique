@@ -7,22 +7,32 @@ function outlineBox() {
     }
 
     boxHTML += "</div>";
+    boxHTML += "<div id='boxheadline'></div>";
+    boxHTML += "<div id='boxwriter'></div>";
     document.getElementById('box').innerHTML = boxHTML;
 }
 function detectHovering() {
     document.getElementById('leftimage').innerHTML = allarticles[0].image;
+    document.getElementById('boxheadline').innerHTML = allarticles[0].headline;
+    document.getElementById('boxwriter').innerHTML = allarticles[0].writer;
     $("#disp"+0).hover(function() {
         document.getElementById('leftimage').innerHTML= allarticles[0].image;
+        document.getElementById('boxheadline').innerHTML = allarticles[0].headline;
+        document.getElementById('boxwriter').innerHTML = allarticles[0].writer;
     }, function() {
         /* Stuff to do when the mouse leaves the element */
     });
     $("#disp"+1).hover(function() {
         document.getElementById('leftimage').innerHTML= allarticles[1].image;
+        document.getElementById('boxheadline').innerHTML = allarticles[1].headline;
+        document.getElementById('boxwriter').innerHTML = allarticles[1].writer;
     }, function() {
         /* Stuff to do when the mouse leaves the element */
     });
     $("#disp"+2).hover(function() {
         document.getElementById('leftimage').innerHTML= allarticles[2].image;
+        document.getElementById('boxheadline').innerHTML = allarticles[2].headline;
+        document.getElementById('boxwriter').innerHTML = allarticles[2].writer;
     }, function() {
         /* Stuff to do when the mouse leaves the element */
     });

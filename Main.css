@@ -60,7 +60,7 @@
 }
 
 .mastheadnameright {
-    left: 50%;
+    left: 65%;
     position: absolute;
 }
 .mastheadnameleft {
@@ -76,6 +76,8 @@
 .headline {
     font-family: ArialN;
     font-size: 32px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .writer {
     font-family: ArialN;
@@ -109,11 +111,11 @@
     height: 300px;
     width: 40%;
     display: inline-block;
-    vertical-align: top;
+    vertical-align: text-bottom;;
     margin-top: 0px;
 }
 .navbox {
-    height: 32.7%;
+    /*height: 32.7%;*/
     border-width: 1px;
     background-color: black;
     color: white;
@@ -122,9 +124,9 @@
     font-family: ArialN;
     font-size: 20px;
     display: block;
-    /*margin-top: 16.5%;
-    margin-bottom: 16.5%;*/
-    vertical-align: center;
+    padding-top: 11.75%;
+    padding-bottom: 11.75%;
+    vertical-align: middle;
     text-align: center;
 }
 
@@ -140,4 +142,25 @@ body {
 .whitebreak {
     background-color: white;
     height: 10px;
+}
+
+#boxheadline {
+    position: absolute;
+    top: 550px;
+    color: white;
+    font-size: 20px;
+    left: 25%;
+    font-family: ArialN;
+}
+#boxwriter {
+    position: absolute;
+    top: 575px;
+    color: white;
+    font-size: 16px;
+    left: 25%;
+    font-family: ArialN;
+}
+a {
+    color: inherit;
+    text-decoration: inherit;
 }
