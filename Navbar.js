@@ -1,7 +1,7 @@
 var nav = "";
 
 function createNavBar() {
-    nav += "<div id='bar'>";
+    /*nav += "<div id='bar'>";
     nav += "<a class='navlink' href='Main.html'>Stuy Democrats Newsletter</a>";
     nav += " | ";
     nav += "<a class='navlink' href='Volumes.html'>Volumes & Issues</a>";
@@ -9,7 +9,7 @@ function createNavBar() {
     //nav += "<a class='navlink'>Issues</a>";
     nav += " | "
     getDate();
-    nav += "</div>";
+    nav += "</div>";*/
     //getDate();
     nav += "<div id='front'>"
     nav += '<div id="poli" class="bow">Poli</div><div id="tique" class="wob">tique</div>';

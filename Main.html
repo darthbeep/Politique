@@ -16,6 +16,9 @@
         <script src="Head.js" charset="utf-8"></script>
         <script src="Article.js" charset="utf-8"></script>
         <script src="Box.js" charset="utf-8"></script>
+        <script src="jquery.bxslider.js"></script>
+        <!-- bxSlider CSS file -->
+        <link href="jquery.bxslider.css" rel="stylesheet" />
         <!--<script src="Fetch.js" charset="utf-8"></script>-->
     </head>
     <body>
@@ -34,16 +37,21 @@
         <div id="box">
             Box thing
         </div>
+        <div class="bigbreak">
+
+        </div>
         <div id="articles">
             Articles go here
         </div>
         <script type="text/javascript">
             createNavBar();
             createheader();
-            generateArticlesFront();
+            createObjects();
             outlineBox();
             //clicky();
-            detectHovering();
+            //detectHovering();
+            makeitslide();
+            displaytext();
         </script>
     </body>
 </html>

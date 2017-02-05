@@ -14,7 +14,8 @@ function createObjects() {
             text:text[i],
             volume:vol[i],
             issue:iss[i],
-            image: "<img class='boximage' src='" + img[i] + "'>"
+            //image: "<img class='boximage' src='" + img[i] + "'>"
+            image:img[i]
         }
     }
 }
@@ -22,7 +23,7 @@ function createObjects() {
 function displaytext() {
     for (var i = 0; i < articles.length; i++) {
         html += "<div class='headline'>";
-        html += "<a href='Vol1Iss1.html'>";
+        html += "<a href='Vol1Iss1.html#art" + i.toString() + "'>";
         html += allarticles[i].headline;
         html += "</a>";
         /*html += "</div><div class='writer'>";
@@ -41,7 +42,7 @@ function generateArticles() {
 
 function displayFull() {
     for (var i = 0; i < articles.length; i++) {
-        html += "<div class='headline'>";
+        html += "<div class='headline' id='art" + i.toString() +"'>";
 
         html += allarticles[i].headline;
 

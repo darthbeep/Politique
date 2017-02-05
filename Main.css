@@ -78,6 +78,7 @@
     font-size: 32px;
     padding-top: 10px;
     padding-bottom: 10px;
+    z-index: 30000;
 }
 .writer {
     font-family: ArialN;
@@ -94,16 +95,19 @@
     border-color: black;
     border-style: solid;
     border-width: medium;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 15%;
+    margin-right: 15%;
+
 }
 #leftimage {
-    border-style: dashed;
-    height: 100%;
-    width: 60%;
+    border-style: solid;
+    height: 350px;
+    width: 59.55%;
     display: inline-flex;
-    border-width: 0px;
+    border-width: 2.9px;
     vertical-align: top;
+    border-color: white;
+
 }
 #rightnav {
     border-style: dashed;
@@ -116,7 +120,7 @@
 }
 .navbox {
     /*height: 32.7%;*/
-    border-width: 1px;
+    border-width: 1.99px;
     background-color: black;
     color: white;
     border-color: white;
@@ -124,10 +128,13 @@
     font-family: ArialN;
     font-size: 20px;
     display: block;
-    padding-top: 11.75%;
-    padding-bottom: 11.75%;
+    padding-top: 45.8px;
+    padding-bottom: 45.8px;
     vertical-align: middle;
     text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: inherit;
 }
 
 .boximage {
@@ -163,4 +170,21 @@ body {
 a {
     color: inherit;
     text-decoration: inherit;
+}
+
+#boxborder {
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+}
+img {
+    height: 500px;
+    text-align: center;
+}
+.bigbreak {
+    height: 200px;
+}
+.blackongray {
+    background-color: #EEE;
+    color: black;
 }
