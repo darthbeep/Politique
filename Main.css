@@ -82,13 +82,14 @@
 }
 .writer {
     font-family: ArialN;
-    font-size: 16px;
+    font-size: 24px;
     text-transform: capitalize;
 }
 .articletext {
     font-family: Myriad;
-    font-size: 12px;
+    font-size: 16px;
     text-align: justify;
+    text-indent: 50px;
 }
 #box {
     height: 300px;
@@ -187,4 +188,19 @@ img {
 .blackongray {
     background-color: #EEE;
     color: black;
+}
+.indent {
+    text-indent: 50px;
+}
+.floatingimage {
+    float: right;
+    height: 300px;
+    margin-left: 10px;
+}
+#artintro {
+    font-family: Myriad;
+    font-size: 42px;
+    text-align: center;
+    padding: 20px;
+    padding-top: 40px;
 }

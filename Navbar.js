@@ -12,7 +12,7 @@ function createNavBar() {
     nav += "</div>";*/
     //getDate();
     nav += "<div id='front'>"
-    nav += '<div id="poli" class="bow">Poli</div><div id="tique" class="wob">tique</div>';
+    nav += '<a href="index.html"><div id="poli" class="bow">Poli</div><div id="tique" class="wob">tique</div></a>';
     nav += "</div>"
     document.getElementById("nav").innerHTML = nav;
 }

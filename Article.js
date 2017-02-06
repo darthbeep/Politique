@@ -21,6 +21,7 @@ function createObjects() {
 }
 
 function displaytext() {
+    html += "<div id='artintro'>Articles this issue:</div>";
     for (var i = 0; i < articles.length; i++) {
         html += "<div class='headline'>";
         html += "<a href='Vol1Iss1.html#art" + i.toString() + "'>";
@@ -48,7 +49,9 @@ function displayFull() {
 
         html += "</div><div class='writer'>";
         html += allarticles[i].writer;
-        html += "</div><div class='articletext'>";
+        //html += "<br>";
+        html += "</div><br><div class='articletext'>";
+        html += "<img src='" + allarticles[i].image + "' class='floatingimage'>";
         html += allarticles[i].text;
         html += "</div>";
     }
