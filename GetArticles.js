@@ -5,7 +5,7 @@ var prevtext = [];
 var vol = [1, 1, 1];
 var iss = [1, 1, 1];
 var art = [0, 1, 2];
-var img = ["http://www.billboard.com/files/styles/article_main_image/public/media/donald-trump-thumbs-up-aug-2015-billboard-650.jpg", "http://www.usnews.com/dims4/USNEWS/5c287b1/2147483647/thumbnail/970x647/quality/85/?url=%2Fcmsmedia%2Ffb%2Fa0c6e9a1c7db237875eb9a9af49192%2Fresizes%2F1500%2Fmedia%3A95bb2d0fba214be08616d61b25fcc7a0Obama.JPEG", "http://media.salon.com/2014/04/karl_marx.jpg", "https://static01.nyt.com/images/2016/11/11/us/politics/donald-trump-administration-1478905372015/donald-trump-administration-1478905372015-videoSixteenByNineJumbo1600-v2.jpg"];
+var img = ["images/Vol1Iss1Art0.jpg", "images/Vol1Iss1Art1.png", "images/Vol1Iss1Art2.png"];
 text[0] = ''+
 'On January 21, 2017, the establishment was universally shocked (following what seems to be a strong trend since 2016). Liberals and the mainstream media were offended and succumbed to the lowest form of mockery and dismissal. It was this day when counselor to the 45th President of the United States, Kellyanne Conway, used the term “alternative facts” when discussing President Trump’s inaugural crowd size. Esteemed journalist Dan Rather issued a scathing criticism (ironically on a Facebook post) saying “Facts and the truth are not partisan. They are the bedrock of our democracy. And you are either with them, with us, with our Constitution, our history, and the future of our nation, or you are against it. Everyone must answer that question.” To me, this statement proves why the establishment lost the 2016 election and, barring any radical event, will lose the 2020 election.'+
 '<br>&emsp;&emsp;&emsp;'+
