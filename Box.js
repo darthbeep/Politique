@@ -40,7 +40,8 @@ function detectHovering() {
 }
 */
 function outlineBox() {
-    var boxHTML = "";
+    var boxHTML = "<div class='boxtotal'>";
+    boxHTML += "<div id='artintro'>In this month's issue:</div>";
     boxHTML += "<ul class='bxslider'>";
     for (var i = 0; i < allarticles.length; i++) {
         var tboxHTML = "<li>";
@@ -53,7 +54,7 @@ function outlineBox() {
         //alert(tboxHTML);
         boxHTML += tboxHTML;
     }
-    boxHTML += "</ul>"
+    boxHTML += "</ul></div>"
     document.getElementById('box').innerHTML = boxHTML;
 }
 

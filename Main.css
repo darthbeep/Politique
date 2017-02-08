@@ -180,10 +180,10 @@ a {
 }
 img {
     height: 500px;
-    text-align: center;
+
 }
 .bigbreak {
-    height: 200px;
+    height: 300px;
 }
 .blackongray {
     background-color: #EEE;
@@ -201,6 +201,15 @@ img {
     font-family: Myriad;
     font-size: 42px;
     text-align: center;
-    padding: 20px;
-    padding-top: 40px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+.boxtotal {
+    text-align: center;
+    align: middle;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+li {
+    text-align: center;
 }

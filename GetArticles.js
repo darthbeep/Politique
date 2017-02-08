@@ -1,8 +1,10 @@
 var articles = ["The Alt-Truth: A Serious Miscalculation and the Repercussions that Followed", "Voting in the United States Explained", "Crisis in South Sudan"/*, "Pirating Music is Fun"*/];
 var writers = ["Alex Serbanescu", "Caroline Magoc", "Oliver Frank and Debi Saha"/*, "James Madison"*/];
 var text = [];
+var prevtext = [];
 var vol = [1, 1, 1];
 var iss = [1, 1, 1];
+var art = [0, 1, 2];
 var img = ["http://www.billboard.com/files/styles/article_main_image/public/media/donald-trump-thumbs-up-aug-2015-billboard-650.jpg", "http://www.usnews.com/dims4/USNEWS/5c287b1/2147483647/thumbnail/970x647/quality/85/?url=%2Fcmsmedia%2Ffb%2Fa0c6e9a1c7db237875eb9a9af49192%2Fresizes%2F1500%2Fmedia%3A95bb2d0fba214be08616d61b25fcc7a0Obama.JPEG", "http://media.salon.com/2014/04/karl_marx.jpg", "https://static01.nyt.com/images/2016/11/11/us/politics/donald-trump-administration-1478905372015/donald-trump-administration-1478905372015-videoSixteenByNineJumbo1600-v2.jpg"];
 text[0] = ''+
 'On January 21, 2017, the establishment was universally shocked (following what seems to be a strong trend since 2016). Liberals and the mainstream media were offended and succumbed to the lowest form of mockery and dismissal. It was this day when counselor to the 45th President of the United States, Kellyanne Conway, used the term “alternative facts” when discussing President Trump’s inaugural crowd size. Esteemed journalist Dan Rather issued a scathing criticism (ironically on a Facebook post) saying “Facts and the truth are not partisan. They are the bedrock of our democracy. And you are either with them, with us, with our Constitution, our history, and the future of our nation, or you are against it. Everyone must answer that question.” To me, this statement proves why the establishment lost the 2016 election and, barring any radical event, will lose the 2020 election.'+
@@ -48,3 +50,9 @@ text[3] = ''+
 'Ho overhaul spike keelhaul long clothes belaying pin grog blossom jury mast draft barque. Killick booty square-rigged smartly topgallant pillage dead men tell no tales keelhaul yawl haul wind. Jack ballast Nelsons folly marooned holystone trysail aye interloper Brethren of the Coast Plate Fleet.<br>&emsp;&emsp;&emsp;'+
 'Scourge of the seven seas reef sails gally me hornswaggle rutters furl keel bounty bowsprit. Driver flogging sutler main sheet salmagundi overhaul prow Jolly Roger bilged on her anchor doubloon. List chase scourge of the seven seas crack Jennys tea cup pressgang parley heave down case shot dance the hempen jig dead men tell no tales.<br>&emsp;&emsp;&emsp;'
 */
+
+for (var i = 0; i < text.length; i++) {
+	//prevtext[i] = text[i].substr(0, 500) + "...";
+	//prevtext[i] = text[i].get(0).firstChild.data;
+	prevtext[i] = text[i].split("<br>")[0] + "<a href='Vol1Iss1Art"+ i + ".html'> <b>(Read More)</b></a>";
+}
