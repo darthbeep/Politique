@@ -214,3 +214,10 @@ img {
 li {
     text-align: center;
 }
+
+#foot {
+    font-family: Myriad;
+    text-align: center;
+    margin-top: -50px;
+    margin-bottom: 50px;
+}
