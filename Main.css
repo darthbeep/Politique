@@ -221,3 +221,15 @@ li {
     margin-top: -50px;
     margin-bottom: 50px;
 }
+.contacttext a {
+    color: #0645AD;
+}
+
+.contacttext {
+    font-family: Myriad;
+    font-size: 16;
+}
+
+.contactwrap {
+    padding-top: 50px;
+}

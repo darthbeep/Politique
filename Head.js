@@ -4,6 +4,6 @@ function createheader() {
     												'<span class="mastheadnameright">Print Editor: Ahmed Sultan</span></div>'+
     												'<br>'+
     												'<div><span class="mastheadnameleft">Junior Editor In Chief: Chloe Hanson </span>'+
-    												'<span class="mastheadnameright">Web editor: Shaina Peters </span></div><br>';
+    												'<span class="mastheadnameright">Web Editor: Shaina Peters </span></div><br>';
     document.getElementById("head").innerHTML = head;
 }
