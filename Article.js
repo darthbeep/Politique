@@ -14,6 +14,7 @@ function createObjects() {
             text:text[i],
             volume:vol[i],
             issue:iss[i],
+			artnum:art[i],
             //image: "<img class='boximage' src='" + img[i] + "'>"
             image:img[i],
             preview:prevtext[i]
@@ -23,8 +24,14 @@ function createObjects() {
 
 function displaytext() {
     for (var i = 0; i < articles.length; i++) {
+		if (i == 0 || allarticles[i].issue != allarticles[i-1].issue) {
+			html += "<div class='issuediv'>";
+			html += "<a href='issues/Vol" + allarticles[i].volume+ "Iss"+ allarticles[i].issue + ".html'>";
+			html += "Volume " + allarticles[i].volume + ", Issue " + allarticles[i].issue;
+			html += "</a></div>";
+		}
         html += "<div class='headline'>";
-        html += "<a href='Vol1Iss1Art" + i.toString() + ".html'>";
+        html += "<a href='articles/Vol" + allarticles[i].volume+"Iss" + allarticles[i].issue+"Art" + allarticles[i].artnum + ".html'>";
         html += allarticles[i].headline;
         html += "</a>";
         html += "</div>";
@@ -52,7 +59,7 @@ function generateArticle(i) {
     html += "</div><div class='writer'>";
     html += allarticles[i].writer;
     html += "</div><br><div class='articletext'>";
-    html += "<img src='" + allarticles[i].image + "' class='floatingimage'>";
+    html += "<img src='../" + allarticles[i].image + "' class='floatingimage'>";
     html += allarticles[i].text;
     html += "</div>";
     document.getElementById('articles').innerHTML = html;
@@ -72,6 +79,31 @@ function displayFull() {
         html += "<img src='" + allarticles[i].image + "' class='floatingimage'>";
         html += allarticles[i].text;
         html += "</div>";
+    }
+    document.getElementById('articles').innerHTML = html;
+}
+function generateArticlesIssues(v, is) {
+	createObjects();
+	html += "<div class='issuediv'>Volume " + v + ", Issue " + is + "</div>";
+	var ok = [];
+	var place = 0;
+	for (var i = 0; i < allarticles.length; i++) {
+		if (v == allarticles[i].volume && is == allarticles[i].issue) {
+			ok[place] = i;
+			place++;
+		}
+	}
+    for (var i = 0; i < place; i++) {
+
+		html += "<div class='headline'>";
+        html += "<a href='../articles/Vol" + allarticles[ok[i]].volume + "Iss" + allarticles[ok[i]].issue + "Art" + allarticles[ok[i]].artnum + ".html'>";
+        html += allarticles[ok[i]].headline;
+        html += "</a>";
+        html += "</div>";
+        html += "<div class='articletext'>";
+        html += allarticles[ok[i]].preview;
+        html += "</div>";
+
     }
     document.getElementById('articles').innerHTML = html;
 }

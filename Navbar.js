@@ -11,9 +11,19 @@ function createNavBar() {
     getDate();
     nav += "</div>";*/
     //getDate();
-    nav += "<div id='front'>"
-    nav += '<a href="index.html"><div id="poli" class="bow">Poli</div><div id="tique" class="wob">tique</div></a>';
-    nav += "</div>"
+	var par = "A";
+	//alert(document.getElementsByTagName('title')[0]);
+	if (document.getElementsByTagName('title')[0].innerHTML == "Stuy Politique") {
+		par = "B";
+	}
+    nav += "<div id='front'>";
+	if (par == "A") {
+		nav += '<a href="../index.html"><div id="poli" class="bow">Poli</div><div id="tique" class="wob">tique</div></a>';
+	}
+	if (par == "B") {
+		nav += '<a href="index.html"><div id="poli" class="bow">Poli</div><div id="tique" class="wob">tique</div></a>';
+	}
+    nav += "</div>";
     document.getElementById("nav").innerHTML = nav;
 }
 

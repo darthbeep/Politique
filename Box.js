@@ -45,7 +45,7 @@ function outlineBox() {
     boxHTML += "<ul class='bxslider'>";
     for (var i = 0; i < allarticles.length; i++) {
         var tboxHTML = "<li>";
-        tboxHTML += "<a href='Vol1Iss1Art" + i.toString() + ".html'>";
+        tboxHTML += "<a href='articles/Vol" + allarticles[i].volume + "Iss" + allarticles[i].issue + "Art" + allarticles[i].artnum + ".html'>";
         tboxHTML += "<img src=\"";
         tboxHTML += allarticles[i].image;
         tboxHTML += "\" title=\"";

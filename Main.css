@@ -213,8 +213,8 @@ img {
 .boxtotal {
     text-align: center;
     align: middle;
-    margin-left: 0%;
-    margin-right: 0%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 li {
     text-align: center;
@@ -251,4 +251,10 @@ li {
 
 .headpartright {
     text-align: right;
+}
+
+.issuediv {
+	font-size: 72px;
+	text-align: center;
+	font-family: Open;
 }
